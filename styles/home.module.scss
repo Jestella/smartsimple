@@ -2,52 +2,10 @@
   padding: 0 2rem;
 }
 
-.main {
-  min-height: 100vh;
-  padding: 4rem 0;
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-.footer {
-  display: flex;
-  flex: 1;
-  padding: 2rem 0;
-  border-top: 1px solid #eaeaea;
-  justify-content: center;
-  align-items: center;
-}
-
-.footer a {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-grow: 1;
-}
-
-.title a {
-  color: #0070f3;
-  text-decoration: none;
-}
-
-.title a:hover,
-.title a:focus,
-.title a:active {
-  text-decoration: underline;
-}
-
 .title {
   margin: 0;
   line-height: 1.15;
   font-size: 4rem;
-}
-
-.title,
-.description {
-  text-align: center;
 }
 
 .description {
@@ -85,32 +43,67 @@
   max-width: 300px;
 }
 
-.card:hover,
-.card:focus,
-.card:active {
-  color: #0070f3;
-  border-color: #0070f3;
+.mainImage {
+  background-image: url('/images/main-image.jpg');
+  width: 100vw;
+  height: 600px;
+  background-size: cover;
+  filter: grayscale(100%);
+
+  hr {
+    width: 90%;
+  }
 }
 
-.card h2 {
-  margin: 0 0 1rem 0;
-  font-size: 1.5rem;
+.mainImageText {
+  width: 40%;
+  position: absolute;
+  top: 120px;
+  right: 50px;
+  color: #292f32;
 }
 
-.card p {
-  margin: 0;
-  font-size: 1.25rem;
-  line-height: 1.5;
+.smartsimpleCloud {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+
+  h2,
+  h1 {
+    margin: 0;
+  }
 }
 
-.logo {
-  height: 1em;
-  margin-left: 0.5rem;
+.cloud {
+  font-size: 60px;
+  font-weight: 400;
+  letter-spacing: 5px;
+}
+
+.containerG {
+  background-color: #058488;
+  padding: 120px 30px;
+  text-align: center;
+}
+
+.containerO {
+  background-color: #d6621f;
+  padding: 200px 30px;
+  text-align: center;
+}
+
+.containerI {
+  background-color: #f7f4f0;
+  padding: 200px 30px;
+  text-align: center;
 }
 
 @media (max-width: 600px) {
   .grid {
     width: 100%;
     flex-direction: column;
+  }
+
+  .mainImage {
+    height: 400px;
   }
 }
