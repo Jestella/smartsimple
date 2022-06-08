@@ -13,8 +13,8 @@ const Cards = () => {
           />
         </div>
         <p>
-          'We will be closing most day-to-day business operations between July
-          4-8th for our third Global Recharge Week.'
+          We will be closing most day-to-day business operations between July
+          4-8th for our third Global Recharge Week.
         </p>
         <button className='btn btn-outline-success'>Read the blog</button>
       </div>
